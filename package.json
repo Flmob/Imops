@@ -1,0 +1,22 @@
+{
+  "name": "imops",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Flmob",
+  "license": "ISC",
+  "dependencies": {
+    "archiver": "^2.0.0",
+    "body-parser": "^1.17.2",
+    "connect-multiparty": "^2.0.0",
+    "cookie": "^0.3.1",
+    "express": "^4.15.4",
+    "imagemin": "^5.3.1",
+    "imagemin-jpegtran": "^5.0.2",
+    "imagemin-pngquant": "^5.0.1",
+    "nodemailer": "^4.0.1"
+  }
+}
