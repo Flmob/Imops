@@ -13,11 +13,6 @@ var zipper = require('./lib/zipper');
 var imgWork = require('./lib/imgWork');
 var fncts = require('./lib/functions');
 
-fncts.deleteFile('./uploads/test.txt', function(err, res) {
-    if (err) console.log(err);
-    else console.log(res);
-});
-
 var app = express();
 
 app.use(function(req, res, next) {
