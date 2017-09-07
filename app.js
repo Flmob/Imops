@@ -93,11 +93,12 @@ app.post('/download', function(req, res) {
         zipper.zipImgs(JSON.parse(fields.paths[0]), function(err, zPath) {
             if (err) {
                 res.status(500);
-                res.end(err.code);
+                res.end('Sorry, but mail has not been sent');
                 console.log('\n***Zipping UNsuccesfull***');
                 return;
             }
 
+            console.log('\n***Zipping succesfull***');
             var options = {
                 to: fields.email[0],
                 attachments: [{
